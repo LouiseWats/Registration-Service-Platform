@@ -55,5 +55,38 @@ namespace RegistrationServicePlatform
         {
             this.Close();
         }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                register_toolStripButton1_Click(sender, e);
+            }
+
+            if (e.KeyCode == Keys.F2)
+            {
+                search_toolStripButton2_Click(sender, e);
+            }
+
+            if (e.KeyCode == Keys.F3)
+            {
+                browser_toolStripButton3_Click(sender, e);
+            }
+
+            if (e.KeyCode == Keys.F4)
+            {
+                calculator_toolStripButton4_Click(sender, e);
+            }
+
+            if (e.KeyCode == Keys.F5)
+            {
+                about_toolStripButton5_Click(sender, e);
+            }
+
+            if (e.KeyCode == Keys.Escape)
+            {
+                exit_toolStripButton6_Click(sender, e);
+            }
+        }
     }
 }

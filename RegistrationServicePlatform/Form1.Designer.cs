@@ -70,8 +70,8 @@
             this.register_toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.register_toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.register_toolStripButton1.Name = "register_toolStripButton1";
-            this.register_toolStripButton1.Size = new System.Drawing.Size(112, 55);
-            this.register_toolStripButton1.Text = "Register Data";
+            this.register_toolStripButton1.Size = new System.Drawing.Size(133, 55);
+            this.register_toolStripButton1.Text = "Register Data | F1";
             this.register_toolStripButton1.Click += new System.EventHandler(this.register_toolStripButton1_Click);
             // 
             // toolStripSeparator2
@@ -85,8 +85,8 @@
             this.search_toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.search_toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.search_toolStripButton2.Name = "search_toolStripButton2";
-            this.search_toolStripButton2.Size = new System.Drawing.Size(78, 55);
-            this.search_toolStripButton2.Text = "Search";
+            this.search_toolStripButton2.Size = new System.Drawing.Size(99, 55);
+            this.search_toolStripButton2.Text = "Search | F2";
             this.search_toolStripButton2.Click += new System.EventHandler(this.search_toolStripButton2_Click);
             // 
             // toolStripSeparator3
@@ -100,8 +100,8 @@
             this.browser_toolStripButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.browser_toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.browser_toolStripButton3.Name = "browser_toolStripButton3";
-            this.browser_toolStripButton3.Size = new System.Drawing.Size(85, 55);
-            this.browser_toolStripButton3.Text = "Browser";
+            this.browser_toolStripButton3.Size = new System.Drawing.Size(106, 55);
+            this.browser_toolStripButton3.Text = "Browser | F3";
             this.browser_toolStripButton3.Click += new System.EventHandler(this.browser_toolStripButton3_Click);
             // 
             // toolStripSeparator4
@@ -115,8 +115,8 @@
             this.calculator_toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.calculator_toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.calculator_toolStripButton4.Name = "calculator_toolStripButton4";
-            this.calculator_toolStripButton4.Size = new System.Drawing.Size(90, 55);
-            this.calculator_toolStripButton4.Text = "Calculator";
+            this.calculator_toolStripButton4.Size = new System.Drawing.Size(111, 55);
+            this.calculator_toolStripButton4.Text = "Calculator | F4";
             this.calculator_toolStripButton4.Click += new System.EventHandler(this.calculator_toolStripButton4_Click);
             // 
             // toolStripSeparator1
@@ -130,8 +130,8 @@
             this.about_toolStripButton5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.about_toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.about_toolStripButton5.Name = "about_toolStripButton5";
-            this.about_toolStripButton5.Size = new System.Drawing.Size(76, 55);
-            this.about_toolStripButton5.Text = "About";
+            this.about_toolStripButton5.Size = new System.Drawing.Size(97, 55);
+            this.about_toolStripButton5.Text = "About | F5";
             this.about_toolStripButton5.Click += new System.EventHandler(this.about_toolStripButton5_Click);
             // 
             // exit_toolStripButton6
@@ -142,8 +142,8 @@
             this.exit_toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.exit_toolStripButton6.Name = "exit_toolStripButton6";
             this.exit_toolStripButton6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.exit_toolStripButton6.Size = new System.Drawing.Size(62, 55);
-            this.exit_toolStripButton6.Text = "Exit";
+            this.exit_toolStripButton6.Size = new System.Drawing.Size(91, 55);
+            this.exit_toolStripButton6.Text = "Exit | ESC";
             this.exit_toolStripButton6.Click += new System.EventHandler(this.exit_toolStripButton6_Click);
             // 
             // process1
@@ -165,10 +165,12 @@
             this.ClientSize = new System.Drawing.Size(800, 483);
             this.Controls.Add(this.toolStrip1);
             this.IsMdiContainer = true;
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
