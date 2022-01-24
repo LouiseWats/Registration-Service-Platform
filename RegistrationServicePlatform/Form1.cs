@@ -16,5 +16,44 @@ namespace RegistrationServicePlatform
         {
             InitializeComponent();
         }
+
+        private void register_toolStripButton1_Click(object sender, EventArgs e)
+        {
+            registerForm registrationForm = new registerForm();
+            registrationForm.MdiParent = this;
+            registrationForm.Show();
+        }
+
+        private void search_toolStripButton2_Click(object sender, EventArgs e)
+        {
+            searchForm searchForm = new searchForm();
+            searchForm.MdiParent = this;
+            searchForm.Show();
+        }
+
+        private void browser_toolStripButton3_Click(object sender, EventArgs e)
+        {
+            browserForm browserForm = new browserForm();
+            browserForm.MdiParent = this;
+            browserForm.Show();
+        }
+
+        private void calculator_toolStripButton4_Click(object sender, EventArgs e)
+        {
+            this.process1.StartInfo.FileName = "C:\\Users\\Louise\\source\\repos\\Calculator\\Calculator\\bin\\Debug\\Calculator.exe";
+            this.process1.Start();
+        }
+
+        private void about_toolStripButton5_Click(object sender, EventArgs e)
+        {
+            aboutForm aboutForm = new aboutForm();
+            aboutForm.MdiParent = this;
+            aboutForm.Show();
+        }
+
+        private void exit_toolStripButton6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
