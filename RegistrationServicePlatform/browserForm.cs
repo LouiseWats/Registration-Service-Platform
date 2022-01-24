@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RegistrationServicePlatform
 {
+    // A very simple browser used as an additional feature for this desktop app. 
+   
     public partial class browserForm : Form
     {
         public browserForm()
@@ -48,6 +43,11 @@ namespace RegistrationServicePlatform
             }
 
             
+        }
+
+        private void browserForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

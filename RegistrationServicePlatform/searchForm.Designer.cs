@@ -44,9 +44,9 @@
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.searchIdTextBox = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
+            this.searchIdTextBox = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.infoBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -198,22 +198,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search for person";
             // 
-            // label8
-            // 
-            this.label8.Location = new System.Drawing.Point(33, 33);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 23);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "ID:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // searchIdTextBox
-            // 
-            this.searchIdTextBox.Location = new System.Drawing.Point(84, 36);
-            this.searchIdTextBox.Name = "searchIdTextBox";
-            this.searchIdTextBox.Size = new System.Drawing.Size(174, 20);
-            this.searchIdTextBox.TabIndex = 1;
-            // 
             // searchButton
             // 
             this.searchButton.Location = new System.Drawing.Point(299, 36);
@@ -223,6 +207,22 @@
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // searchIdTextBox
+            // 
+            this.searchIdTextBox.Location = new System.Drawing.Point(84, 36);
+            this.searchIdTextBox.Name = "searchIdTextBox";
+            this.searchIdTextBox.Size = new System.Drawing.Size(174, 20);
+            this.searchIdTextBox.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(33, 33);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(45, 23);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "ID:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // searchForm
             // 

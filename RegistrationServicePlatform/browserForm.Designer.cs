@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(browserForm));
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.searchBar = new System.Windows.Forms.TextBox();
             this.backButton = new System.Windows.Forms.ToolStripButton();
             this.forwardButton = new System.Windows.Forms.ToolStripButton();
             this.refreshButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.searchBar = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,14 +61,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(893, 41);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // searchBar
-            // 
-            this.searchBar.Location = new System.Drawing.Point(202, 12);
-            this.searchBar.Name = "searchBar";
-            this.searchBar.Size = new System.Drawing.Size(644, 20);
-            this.searchBar.TabIndex = 2;
-            this.searchBar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchBar_KeyDown);
             // 
             // backButton
             // 
@@ -114,6 +106,14 @@
             this.toolStripButton1.Size = new System.Drawing.Size(36, 38);
             this.toolStripButton1.Text = "toolStripButton1";
             // 
+            // searchBar
+            // 
+            this.searchBar.Location = new System.Drawing.Point(202, 12);
+            this.searchBar.Name = "searchBar";
+            this.searchBar.Size = new System.Drawing.Size(644, 20);
+            this.searchBar.TabIndex = 2;
+            this.searchBar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchBar_KeyDown);
+            // 
             // browserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,9 +122,11 @@
             this.Controls.Add(this.searchBar);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.webBrowser1);
+            this.MaximizeBox = false;
             this.Name = "browserForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Browser";
+            this.Load += new System.EventHandler(this.browserForm_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);

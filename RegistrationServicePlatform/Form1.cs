@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RegistrationServicePlatform
@@ -40,7 +33,9 @@ namespace RegistrationServicePlatform
 
         private void calculator_toolStripButton4_Click(object sender, EventArgs e)
         {
+            // I used a calculator that I created in another project. It is commented below. 
             this.process1.StartInfo.FileName = "C:\\Users\\Louise\\source\\repos\\Calculator\\Calculator\\bin\\Debug\\Calculator.exe";
+            //this.process1.StartInfo.FileName = "C:\\Windows\\WinSxS\\wow64_microsoft-windows-calc_31bf3856ad364e35_10.0.19041.1_none_6a03b910ee7a4073\\calc.exe";
             this.process1.Start();
         }
 

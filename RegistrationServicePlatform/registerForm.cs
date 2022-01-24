@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RegistrationServicePlatform
@@ -24,7 +18,7 @@ namespace RegistrationServicePlatform
 
             this.infoBox.Enabled = true;
 
-            /**********Clear all textboxes**********/
+            // Clear all textboxes
             this.idTextBox.ResetText();
             this.firstNameTextBox.ResetText();
             this.lastNameTextBox.ResetText();
@@ -53,6 +47,8 @@ namespace RegistrationServicePlatform
             folderName = "X:\\C#\\RegistrationServicePlatformRegistreredData\\";
 
             string element;
+
+
 
             // Save ID:
             element = folderName + this.idTextBox.Text + "_id.txt";

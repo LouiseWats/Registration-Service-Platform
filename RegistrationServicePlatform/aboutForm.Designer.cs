@@ -52,9 +52,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(67, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 13);
+            this.label2.Size = new System.Drawing.Size(217, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Product Name: ";
+            this.label2.Text = "Product Name: Registration Service Platform";
             // 
             // label3
             // 
@@ -70,9 +70,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(67, 138);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.Size = new System.Drawing.Size(156, 13);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Https://";
+            this.label4.Text = "https://github.com/LouiseWats";
             // 
             // label5
             // 
@@ -88,9 +88,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(154, 234);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(31, 13);
+            this.label6.Size = new System.Drawing.Size(34, 13);
             this.label6.TabIndex = 0;
-            this.label6.Text = "2022";
+            this.label6.Text = "2022-";
             // 
             // label7
             // 
@@ -116,7 +116,8 @@
             this.MaximizeBox = false;
             this.Name = "aboutForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "About Us";
+            this.Text = "About";
+            this.Load += new System.EventHandler(this.aboutForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

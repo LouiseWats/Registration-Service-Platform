@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RegistrationServicePlatform
@@ -94,6 +88,10 @@ namespace RegistrationServicePlatform
                 readText = System.IO.File.ReadAllText(element, Encoding.UTF8);
                 this.additionalInfoTextBox.Text = readText;
             }
+
+        
         }
+
+     
     }
 }
